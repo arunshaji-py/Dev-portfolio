@@ -1,0 +1,42 @@
+.wrapper {
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.track {
+  display: flex;
+  gap: 1rem;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  flex-shrink: 0;
+  padding: 1rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.item:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

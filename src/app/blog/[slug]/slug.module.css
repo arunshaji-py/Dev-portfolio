@@ -1,0 +1,100 @@
+.main {
+  padding: 8rem 3rem 6rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+  margin-bottom: 3rem;
+  transition: color 0.3s;
+}
+.backLink:hover { color: var(--accent); }
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+.readTime {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.dot {
+  color: var(--text-dim);
+  font-size: 0.7rem;
+}
+
+.category {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+}
+.category[data-category="systems"],
+.category[data-category="devops"] {
+  color: var(--coral);
+  background: rgba(255, 107, 107, 0.1);
+}
+.category[data-category="web"],
+.category[data-category="web dev"] {
+  color: var(--cyan);
+  background: rgba(78, 205, 196, 0.1);
+}
+.category[data-category="ai"],
+.category[data-category="ai/ml"] {
+  color: var(--lavender);
+  background: rgba(184, 169, 240, 0.1);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.excerpt {
+  margin-top: 1.25rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main { padding-left: 1.5rem; padding-right: 1.5rem; }
+}

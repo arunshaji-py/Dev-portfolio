@@ -67,10 +67,10 @@ export const siteConfig = {
   tagline: 'I build things for the web',
   description:
     'Software developer crafting full-stack applications with Python and React. I write about the tech that shapes how we build.',
-  email: 'hello@yourname.dev',           // ← UPDATE with your email
+  email: 'arunshaji.py@gmail.com',
   github: 'https://github.com/arunshaji-py',
-  linkedin: 'https://linkedin.com/in/',  // ← UPDATE with your LinkedIn
-  twitter: 'https://twitter.com/',        // ← UPDATE with your Twitter/X
+  linkedin: 'https://www.linkedin.com/in/arun-shaji-py/',
+  twitter: 'https://x.com/itsarunshaji',
   stats: {
     years: '1+',            // ← UPDATE as you grow
     projects: '2',           // ← UPDATE as you ship more

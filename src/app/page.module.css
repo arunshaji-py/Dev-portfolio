@@ -426,6 +426,18 @@
   transform: translateY(-2px);
 }
 
+/* ── Animations (must be in module so names hash correctly) ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.05); }
+  66% { transform: translate(-20px, 15px) scale(0.95); }
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .projectsGrid, .blogGrid { grid-template-columns: 1fr; }

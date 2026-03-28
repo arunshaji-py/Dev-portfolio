@@ -13,6 +13,15 @@ export interface Project {
 // ─────────────────────────────────────────────
 export const projects: Project[] = [
   {
+    title: 'NHS Triage & Scheduling System',
+    description:
+      'Full-stack healthcare booking platform with AI-powered symptom triage (40+ symptoms, red flag detection), Google OR-Tools constraint-based scheduling, role-based access control (Patient/Doctor/Admin), real-time analytics dashboard, and admin panel. Load tested to 200+ concurrent users.',
+    year: '2026',
+    tag: 'Full-Stack',
+    stack: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'OR-Tools', 'Docker'],
+    github: 'https://github.com/arunshaji-py/nhs-booking-app',
+  },
+  {
     title: 'Staff Rostering System',
     description:
       'AI-powered healthcare staff rostering platform with constraint-based automated scheduling using Google OR-Tools. Features role-based dashboards, real-time shift coverage analytics, availability calendars, and conflict-aware manual assignment — all behind JWT auth.',
@@ -30,6 +39,7 @@ export const showComingSoon = true;
 // EDIT YOUR TECH STACK HERE
 // ─────────────────────────────────────────────
 export const techStack = [
+  { name: 'TypeScript', color: '#3178c6' },
   { name: 'JavaScript', color: '#f7df1e' },
   { name: 'Python', color: '#306998' },
   { name: 'React', color: '#61dafb' },
@@ -41,6 +51,8 @@ export const techStack = [
   { name: 'Bootstrap', color: '#7952b3' },
   { name: 'Google OR-Tools', color: '#4285f4' },
   { name: 'REST APIs', color: '#61dafb' },
+  { name: 'Docker', color: '#2496ed' },
+  { name: 'Tailwind CSS', color: '#06b6d4' },
   { name: 'Git', color: '#f05032' },
   { name: 'CSS', color: '#264de4' },
   { name: 'HTML', color: '#e34c26' },
@@ -61,12 +73,12 @@ export const siteConfig = {
   twitter: 'https://twitter.com/',        // ← UPDATE with your Twitter/X
   stats: {
     years: '1+',            // ← UPDATE as you grow
-    projects: '1',           // ← UPDATE as you ship more
+    projects: '2',           // ← UPDATE as you ship more
     techUsed: '10+',
     articles: '6',           // ← matches sample blog posts
   },
   about: [
-    'I\'m a software developer who loves building full-stack applications that solve real problems. My first major project — an AI-powered staff rostering system — taught me everything from constraint-based optimisation to building clean, role-based dashboards.',
+    'I\'m a software developer who loves building full-stack applications that solve real problems. From an AI-powered staff rostering system to an NHS triage and scheduling platform, I\'ve shipped production-grade systems with constraint-based optimisation, intelligent symptom triage, and clean role-based dashboards.',
     'I believe great software is equal parts engineering rigour and creative empathy. The best codebases read like well-edited prose — clear, intentional, and easy to change. That philosophy carries into everything I ship.',
     'When I\'m not coding you\'ll find me writing technical deep-dives, exploring new frameworks, or diving into the latest in AI and optimisation. Always happy to chat about full-stack development, Python, or interesting engineering challenges.',
   ],
